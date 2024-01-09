@@ -1,0 +1,87 @@
+<CoordinateSystem> { Z-up } 
+<Material> Material {
+  <Scalar> baser { 1.0 }
+  <Scalar> baseg { 1.0 }
+  <Scalar> baseb { 1.0 }
+  <Scalar> basea { 1.0 }
+  <Scalar> ambr { 1.0 }
+  <Scalar> ambg { 1.0 }
+  <Scalar> ambb { 1.0 }
+  <Scalar> amba { 1.0 }
+  <Scalar> emitr { 0.0 }
+  <Scalar> emitg { 0.0 }
+  <Scalar> emitb { 0.0 }
+  <Scalar> emita { 1.0 }
+  <Scalar> specr { 1.0 }
+  <Scalar> specg { 1.0 }
+  <Scalar> specb { 1.0 }
+  <Scalar> speca { 1.0 }
+  <Scalar> shininess { 0.5 }
+  <Scalar> roughness { 0.4000000059604645 }
+  <Scalar> metallic { 0.0 }
+  <Scalar> ior { 1.4500000476837158 }
+  <Scalar> local { 1 }
+}
+
+<Texture> wallTexture.png {
+  "./tex/wallTexture.png"
+  <Scalar> format { rgba }
+  <Scalar> envtype { modulate }
+  <Scalar> uv-name { UVMap }
+  <Scalar> minfilter { linear_mipmap_linear }
+  <Scalar> magfilter { linear }
+  <Scalar> wrapu { repeat }
+  <Scalar> wrapv { repeat }
+  <Scalar> alpha { off }
+}
+
+  <Group> Cube {
+    <Transform> {
+      <Matrix4> {
+        1.0 2.220445916901415e-16 2.220446843343701e-16 0.0 
+        2.220446843343701e-16 1.1924880638503055e-08 -1.0 0.0 
+        -2.2204437248727918e-18 0.009999990463256836 1.1924869425250506e-10 0.0 
+        1.0 0.009999999776482582 1.0 1.0 
+      }
+    }
+    
+    <VertexPool> Cube {
+    
+      <Vertex> 0 {
+        0.000000 0.000000 -0.000000
+        <UV> UVMap {
+          0.000000 0.000000 
+        }
+        <RGBA> { 1 1 1 1 }
+      }
+      <Vertex> 1 {
+        2.000000 0.000000 -0.000000
+        <UV> UVMap {
+          1.000000 0.000000 
+        }
+        <RGBA> { 1 1 1 1 }
+      }
+      <Vertex> 2 {
+        2.000000 -0.000000 2.000000
+        <UV> UVMap {
+          1.000000 1.000000 
+        }
+        <RGBA> { 1 1 1 1 }
+      }
+      <Vertex> 3 {
+        -0.000000 -0.000000 2.000000
+        <UV> UVMap {
+          0.000000 1.000000 
+        }
+        <RGBA> { 1 1 1 1 }
+      }}
+    
+    
+    <Polygon> {
+      <TRef> { wallTexture.png }
+      <MRef> { Material }
+      <Normal> {0.000000 -1.000000 0.000000}
+      <BFace> { 1 }
+      <VertexRef> { 0 1 2 3 <Ref> { Cube }} 
+    }
+  }

@@ -1,0 +1,35 @@
+## Navigator Improvements
+
+- [ ] Consider reconstructing the warehouse. Storing the boxes in an array gives fast adjacency queries, but it takes up quite a lot of space
+- [ ] Add "checkpoints" to Nodes once the number of movers gets too high. This may not be necessary, but it's worth checking
+- [ ] Store nodes that have a really high score in an "unlikely" queue, which is unsorted, and only used if the queue is completely empty
+- [ ] If there's a problem with memory usage, consider discarding the worst nodes in the queue once it gets too big. This will sacrifice some accuracy however
+- [ ] Mark Nodes as identical if the non-target boxes take up the same positions (and obviously the target box is in the same position)
+- [X] ~~Change the Euclidean distance to be more of an approximation~~
+- [ ] Change how the algorithm picks suitable neighbours by creating lists one at a time of each box's moves, rather than all at once
+- [ ] Consider using numpy to speed up matrix operations
+- [ ] Consider splitting the storage into "chunks", so the whole matrix doesn't have to be searched for some operations
+- [ ] Limit the storage size by only holding cuboids that actually contain boxes, and dynamically adding/removing/merging them
+- [X] ~~Ignore moves that "wobble" boxes - make a box unstable, but the only way to resolve this is to move it back~~
+- [X] ~~Implement test cases that require multiple boxes to be moved~~
+- [ ] Once a route has been found, search again with distanceFromStart and distanceToExitApproximate being the ONLY weights. Moves in the established route are somehow weighted, so hopefully the route is improved
+- [ ] Implement an "Ant Colony" search - running several hundred "agents" on the matrix, that randomly+greedily pick moves. Then, once a time limit is reached, do it again, except leave "trails" that weight moves that resulted in a high score (reach the exit AND few moves). [This](https://www.youtube.com/watch?v=X-iSQQgOd1A&t=101s) video shows a rough outline of how it works
+- [X] ~~Get nodes (or maybe the warehouse or storage) to store a dictionary of boxes that CAN move, and updates when boxes are added and deleted. This means searching for possible moves is much faster~~
+- [X] ~~If the algorithm "thinks" it can reach the exit by "running" at it, DO IT! This could manifest as drawing a line from it to the finish, and checking if it's a safe path~~
+- [ ] Similar to above, gaps in the route could have a reward associated with moving a box to them
+- [ ] Perform duplicate node checks whilst creating them
+- [X] ~~Store the lists of availableMoves in the nodes to avoid unnecessary recalculation~~
+- [ ] Give a reward if the selectedBox can actually move
+- [ ] Rewrite recalculateAvailableMoves to not use can_move_box()
+- [ ] Add a penalty for boxes nearest the exit not making the target stable
+- [ ] Add a Pythagorean distance lookup dictionary cache
+- [X] ~~Add an "on-top" variable in availableMoves, so getAvailableMoves() doesn't have to keep doing the same checking for boxes on-top of others~~
+- [ ] Add check to ensure routing is actually possible
+- [X] ~~Add a "safe mode" to the navigator, in that speed is sacrificed for various checks like noDuplicates and noCrashing~~
+- [ ] Modify the structure and behaviour of Move to only "allow" Moves that end in a stable position, so 2 move storage is needed
+- [ ] Don't bother checking if boxes can move Down if there's no unstable box (all code)
+- [ ] Don't bother checking if boxes can move Up if no boxes are unstable (all code)
+- [ ] Change movesDictionary to be dictionaries of sets, rather than dictionaries of lists
+- [ ] Try and store Node queue/visited in a table
+- [ ] Ensure the "locked" functionality of movesDictionary is utilised
+- [ ] Ensure the movesDictionary is utilised in canMove()

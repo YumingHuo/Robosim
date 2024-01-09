@@ -1,0 +1,261 @@
+[Python Integration Tests/python] 🚀  Start image=catthehacker/ubuntu:act-latest
+[Python Integration Tests/python]   🐳  docker pull image=catthehacker/ubuntu:act-latest platform= username= forcePull=true
+[Python Integration Tests/python]   🐳  docker create image=catthehacker/ubuntu:act-latest platform= entrypoint=["tail" "-f" "/dev/null"] cmd=[]
+[Python Integration Tests/python]   🐳  docker run image=catthehacker/ubuntu:act-latest platform= entrypoint=["tail" "-f" "/dev/null"] cmd=[]
+[Python Integration Tests/python]   ☁  git clone 'https://github.com/actions/setup-python' # ref=v4
+[Python Integration Tests/python] ⭐ Run Main actions/checkout@v3
+[Python Integration Tests/python]   🐳  docker cp src=/home/ripytide/sync/uni/spe/2022-RoboSim/. dst=/home/ripytide/sync/uni/spe/2022-RoboSim
+[Python Integration Tests/python]   ✅  Success - Main actions/checkout@v3
+[Python Integration Tests/python] ⭐ Run Main actions/setup-python@v4
+[Python Integration Tests/python]   🐳  docker cp src=/home/ripytide/.cache/act/actions-setup-python@v4/ dst=/var/run/act/actions/actions-setup-python@v4/
+[Python Integration Tests/python]   🐳  docker exec cmd=[node /var/run/act/actions/actions-setup-python@v4/dist/setup/index.js] user= workdir=
+[Python Integration Tests/python]   💬  ::debug::Python is expected to be installed into /opt/hostedtoolcache
+[Python Integration Tests/python]   ❓  ::group::Installed versions
+[Python Integration Tests/python]   💬  ::debug::Semantic version spec of 3.7 is 3.7
+[Python Integration Tests/python]   💬  ::debug::isExplicit: 
+[Python Integration Tests/python]   💬  ::debug::explicit? false
+[Python Integration Tests/python]   💬  ::debug::evaluating 0 versions
+[Python Integration Tests/python]   💬  ::debug::match not found
+[Python Integration Tests/python]   | Version 3.7 was not found in the local cache
+[Python Integration Tests/python]   💬  ::debug::Getting manifest from actions/python-versions@main
+[Python Integration Tests/python]   💬  ::debug::check 3.12.0-alpha.6 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.12.0-alpha.5 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.12.0-alpha.4 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.12.0-alpha.3 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.12.0-alpha.2 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.12.0-alpha.1 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.11.2 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.11.1 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.11.0 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.11.0-rc.2 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.11.0-rc.1 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.11.0-beta.5 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.11.0-beta.4 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.11.0-beta.3 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.11.0-beta.2 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.11.0-beta.1 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.11.0-alpha.7 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.11.0-alpha.6 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.11.0-alpha.5 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.11.0-alpha.4 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.11.0-alpha.3 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.11.0-alpha.2 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.11.0-alpha.1 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.10 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.9 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.8 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.7 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.6 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.5 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.4 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.3 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.2 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.1 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.0 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.0-rc.2 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.0-rc.1 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.0-beta.4 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.0-beta.3 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.0-beta.2 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.0-beta.1 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.0-alpha.7 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.0-alpha.6 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.0-alpha.5 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.0-alpha.4 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.0-alpha.3 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.0-alpha.2 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.10.0-alpha.1 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.9.16 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.9.15 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.9.14 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.9.13 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.9.12 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.9.11 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.9.10 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.9.9 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.9.8 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.9.7 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.9.6 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.9.5 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.9.4 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.9.3 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.9.2 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.9.2-rc.1 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.9.1 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.9.1-rc.1 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.9.0 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.9.0-rc.2 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.9.0-rc.1 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.9.0-beta.5 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.9.0-beta.4 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.8.16 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.8.15 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.8.14 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.8.13 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.8.12 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.8.11 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.8.10 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.8.9 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.8.8 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.8.7 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.8.6 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.8.5 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.8.4 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.8.3 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.8.2 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.8.1 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.8.0 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::check 3.7.16 satisfies 3.7
+[Python Integration Tests/python]   💬  ::debug::x64===x64 && darwin===linux
+[Python Integration Tests/python]   💬  ::debug::x64===x64 && linux===linux
+[Python Integration Tests/python]   💬  ::debug::x64===x64 && linux===linux
+[Python Integration Tests/python]   💬  ::debug::x64===x64 && linux===linux
+[Python Integration Tests/python]   💬  ::debug::matched 3.7.16
+[Python Integration Tests/python]   | Version 3.7 is available for downloading
+[Python Integration Tests/python]   | Download from "https://github.com/actions/python-versions/releases/download/3.7.16-4343262312/python-3.7.16-linux-22.04-x64.tar.gz"
+[Python Integration Tests/python]   💬  ::debug::Downloading https://github.com/actions/python-versions/releases/download/3.7.16-4343262312/python-3.7.16-linux-22.04-x64.tar.gz
+[Python Integration Tests/python]   💬  ::debug::Destination /tmp/028a0dd7-cdba-45da-a7a9-f0f3626e0ca8
+[Python Integration Tests/python]   💬  ::debug::download complete
+[Python Integration Tests/python]   | Extract downloaded archive
+[Python Integration Tests/python]   💬  ::debug::Checking tar --version
+[Python Integration Tests/python]   💬  ::debug::tar (GNU tar) 1.34%0ACopyright (C) 2021 Free Software Foundation, Inc.%0ALicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.%0AThis is free software: you are free to change and redistribute it.%0AThere is NO WARRANTY, to the extent permitted by law.%0A%0AWritten by John Gilmore and Jay Fenlason.
+[Python Integration Tests/python]   | [command]/usr/bin/tar xz --warning=no-unknown-keyword -C /tmp/6e9a3b40-a241-4574-bb0e-4d74084a23fe -f /tmp/028a0dd7-cdba-45da-a7a9-f0f3626e0ca8
+[Python Integration Tests/python]   | Execute installation script
+[Python Integration Tests/python]   | Check if Python hostedtoolcache folder exist...
+[Python Integration Tests/python]   | Creating Python hostedtoolcache folder...
+[Python Integration Tests/python]   | Create Python 3.7.16 folder
+[Python Integration Tests/python]   | Copy Python binaries to hostedtoolcache folder
+[Python Integration Tests/python]   | Create additional symlinks (Required for the UsePythonVersion Azure Pipelines task and the setup-python GitHub Action)
+[Python Integration Tests/python]   | Upgrading pip...
+[Python Integration Tests/python]   | Looking in links: /tmp/tmpw642cpjl
+[Python Integration Tests/python]   | Requirement already satisfied: setuptools in /opt/hostedtoolcache/Python/3.7.16/x64/lib/python3.7/site-packages (47.1.0)
+[Python Integration Tests/python]   | Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.7.16/x64/lib/python3.7/site-packages (22.0.4)
+[Python Integration Tests/python]   ❗  ::error::WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[Python Integration Tests/python]   | Collecting pip
+[Python Integration Tests/python]   | Downloading pip-23.0.1-py3-none-any.whl (2.1 MB)
+[Python Integration Tests/python]   | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 5.2 MB/s eta 0:00:00
+[Python Integration Tests/python]   | Installing collected packages: pip
+[Python Integration Tests/python]   | Successfully installed pip-23.0.1
+[Python Integration Tests/python]   ❗  ::error::WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[Python Integration Tests/python]   | Create complete file
+[Python Integration Tests/python]   💬  ::debug::isExplicit: 
+[Python Integration Tests/python]   💬  ::debug::explicit? false
+[Python Integration Tests/python]   💬  ::debug::isExplicit: 3.7.16
+[Python Integration Tests/python]   💬  ::debug::explicit? true
+[Python Integration Tests/python]   💬  ::debug::evaluating 1 versions
+[Python Integration Tests/python]   💬  ::debug::matched: 3.7.16
+[Python Integration Tests/python]   💬  ::debug::checking cache: /opt/hostedtoolcache/Python/3.7.16/x64
+[Python Integration Tests/python]   💬  ::debug::Found tool in cache Python 3.7.16 x64
+[Python Integration Tests/python]   | Successfully set up CPython (3.7.16)
+[Python Integration Tests/python]   ❓  ::endgroup::
+[Python Integration Tests/python]   ❓ add-matcher /run/act/actions/actions-setup-python@v4/.github/python.json
+[Python Integration Tests/python]   ✅  Success - Main actions/setup-python@v4
+[Python Integration Tests/python]   ⚙  ::set-output:: python-version=3.7.16
+[Python Integration Tests/python]   ⚙  ::set-output:: python-path=/opt/hostedtoolcache/Python/3.7.16/x64/bin/python
+[Python Integration Tests/python]   ⚙  ::add-path:: /opt/hostedtoolcache/Python/3.7.16/x64
+[Python Integration Tests/python]   ⚙  ::add-path:: /opt/hostedtoolcache/Python/3.7.16/x64/bin
+[Python Integration Tests/python] ⭐ Run Main pip install black flake8 pytest
+[Python Integration Tests/python]   🐳  docker exec cmd=[bash --noprofile --norc -e -o pipefail /var/run/act/workflow/2] user= workdir=
+[Python Integration Tests/python]   | Collecting black
+[Python Integration Tests/python]   |   Downloading black-23.1.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.5 MB)
+[Python Integration Tests/python]   |      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 5.8 MB/s eta 0:00:00
+[Python Integration Tests/python]   | Collecting flake8
+[Python Integration Tests/python]   |   Downloading flake8-5.0.4-py2.py3-none-any.whl (61 kB)
+[Python Integration Tests/python]   |      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.9/61.9 kB 4.1 MB/s eta 0:00:00
+[Python Integration Tests/python]   | Collecting pytest
+[Python Integration Tests/python]   |   Downloading pytest-7.2.2-py3-none-any.whl (317 kB)
+[Python Integration Tests/python]   |      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 317.2/317.2 kB 5.4 MB/s eta 0:00:00
+[Python Integration Tests/python]   | Collecting tomli>=1.1.0
+[Python Integration Tests/python]   |   Downloading tomli-2.0.1-py3-none-any.whl (12 kB)
+[Python Integration Tests/python]   | Collecting packaging>=22.0
+[Python Integration Tests/python]   |   Downloading packaging-23.0-py3-none-any.whl (42 kB)
+[Python Integration Tests/python]   |      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.7/42.7 kB 3.2 MB/s eta 0:00:00
+[Python Integration Tests/python]   | Collecting typed-ast>=1.4.2
+[Python Integration Tests/python]   |   Downloading typed_ast-1.5.4-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (843 kB)
+[Python Integration Tests/python]   |      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 843.7/843.7 kB 8.7 MB/s eta 0:00:00
+[Python Integration Tests/python]   | Collecting typing-extensions>=3.10.0.0
+[Python Integration Tests/python]   |   Downloading typing_extensions-4.5.0-py3-none-any.whl (27 kB)
+[Python Integration Tests/python]   | Collecting mypy-extensions>=0.4.3
+[Python Integration Tests/python]   |   Downloading mypy_extensions-1.0.0-py3-none-any.whl (4.7 kB)
+[Python Integration Tests/python]   | Collecting platformdirs>=2
+[Python Integration Tests/python]   |   Downloading platformdirs-3.1.1-py3-none-any.whl (14 kB)
+[Python Integration Tests/python]   | Collecting click>=8.0.0
+[Python Integration Tests/python]   |   Downloading click-8.1.3-py3-none-any.whl (96 kB)
+[Python Integration Tests/python]   |      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.6/96.6 kB 3.6 MB/s eta 0:00:00
+[Python Integration Tests/python]   | Collecting pathspec>=0.9.0
+[Python Integration Tests/python]   |   Downloading pathspec-0.11.1-py3-none-any.whl (29 kB)
+[Python Integration Tests/python]   | Collecting mccabe<0.8.0,>=0.7.0
+[Python Integration Tests/python]   |   Downloading mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+[Python Integration Tests/python]   | Collecting pycodestyle<2.10.0,>=2.9.0
+[Python Integration Tests/python]   |   Downloading pycodestyle-2.9.1-py2.py3-none-any.whl (41 kB)
+[Python Integration Tests/python]   |      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.5/41.5 kB 5.9 MB/s eta 0:00:00
+[Python Integration Tests/python]   | Collecting importlib-metadata<4.3,>=1.1.0
+[Python Integration Tests/python]   |   Downloading importlib_metadata-4.2.0-py3-none-any.whl (16 kB)
+[Python Integration Tests/python]   | Collecting pyflakes<2.6.0,>=2.5.0
+[Python Integration Tests/python]   |   Downloading pyflakes-2.5.0-py2.py3-none-any.whl (66 kB)
+[Python Integration Tests/python]   |      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.1/66.1 kB 7.5 MB/s eta 0:00:00
+[Python Integration Tests/python]   | Collecting attrs>=19.2.0
+[Python Integration Tests/python]   |   Downloading attrs-22.2.0-py3-none-any.whl (60 kB)
+[Python Integration Tests/python]   |      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.0/60.0 kB 539.0 kB/s eta 0:00:00
+[Python Integration Tests/python]   | Collecting exceptiongroup>=1.0.0rc8
+[Python Integration Tests/python]   |   Downloading exceptiongroup-1.1.1-py3-none-any.whl (14 kB)
+[Python Integration Tests/python]   | Collecting iniconfig
+[Python Integration Tests/python]   |   Downloading iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+[Python Integration Tests/python]   | Collecting pluggy<2.0,>=0.12
+[Python Integration Tests/python]   |   Downloading pluggy-1.0.0-py2.py3-none-any.whl (13 kB)
+[Python Integration Tests/python]   | Collecting zipp>=0.5
+[Python Integration Tests/python]   |   Downloading zipp-3.15.0-py3-none-any.whl (6.8 kB)
+[Python Integration Tests/python]   | Installing collected packages: zipp, typing-extensions, typed-ast, tomli, pyflakes, pycodestyle, pathspec, packaging, mypy-extensions, mccabe, iniconfig, exceptiongroup, attrs, platformdirs, importlib-metadata, pluggy, flake8, click, pytest, black
+[Python Integration Tests/python]   | Successfully installed attrs-22.2.0 black-23.1.0 click-8.1.3 exceptiongroup-1.1.1 flake8-5.0.4 importlib-metadata-4.2.0 iniconfig-2.0.0 mccabe-0.7.0 mypy-extensions-1.0.0 packaging-23.0 pathspec-0.11.1 platformdirs-3.1.1 pluggy-1.0.0 pycodestyle-2.9.1 pyflakes-2.5.0 pytest-7.2.2 tomli-2.0.1 typed-ast-1.5.4 typing-extensions-4.5.0 zipp-3.15.0
+[Python Integration Tests/python]   | WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[Python Integration Tests/python]   ✅  Success - Main pip install black flake8 pytest
+[Python Integration Tests/python] ⭐ Run Main pytest
+[Python Integration Tests/python]   🐳  docker exec cmd=[bash --noprofile --norc -e -o pipefail /var/run/act/workflow/3] user= workdir=
+[Python Integration Tests/python]   | ============================= test session starts ==============================
+[Python Integration Tests/python]   | platform linux -- Python 3.7.16, pytest-7.2.2, pluggy-1.0.0
+[Python Integration Tests/python]   | rootdir: /home/ripytide/sync/uni/spe/2022-RoboSim
+[Python Integration Tests/python]   | collected 44 items / 3 errors
+[Python Integration Tests/python]   | 
+[Python Integration Tests/python]   | ==================================== ERRORS ====================================
+[Python Integration Tests/python]   | ___________ ERROR collecting src/a_star_client/test_the_navigator.py ___________
+[Python Integration Tests/python]   | ImportError while importing test module '/home/ripytide/sync/uni/spe/2022-RoboSim/src/a_star_client/test_the_navigator.py'.
+[Python Integration Tests/python]   | Hint: make sure your test modules/packages have valid Python names.
+[Python Integration Tests/python]   | Traceback:
+[Python Integration Tests/python]   | /opt/hostedtoolcache/Python/3.7.16/x64/lib/python3.7/importlib/__init__.py:127: in import_module
+[Python Integration Tests/python]   |     return _bootstrap._gcd_import(name[level:], package, level)
+[Python Integration Tests/python]   | src/a_star_client/test_the_navigator.py:5: in <module>
+[Python Integration Tests/python]   |     from warehouse_server.warehouse import Warehouse
+[Python Integration Tests/python]   | src/warehouse_server/warehouse.py:2: in <module>
+[Python Integration Tests/python]   |     import numpy as np
+[Python Integration Tests/python]   | E   ModuleNotFoundError: No module named 'numpy'
+[Python Integration Tests/python]   | ___ ERROR collecting src/a_star_client/test_weird_scenarios_for_navigator.py ___
+[Python Integration Tests/python]   | ImportError while importing test module '/home/ripytide/sync/uni/spe/2022-RoboSim/src/a_star_client/test_weird_scenarios_for_navigator.py'.
+[Python Integration Tests/python]   | Hint: make sure your test modules/packages have valid Python names.
+[Python Integration Tests/python]   | Traceback:
+[Python Integration Tests/python]   | /opt/hostedtoolcache/Python/3.7.16/x64/lib/python3.7/importlib/__init__.py:127: in import_module
+[Python Integration Tests/python]   |     return _bootstrap._gcd_import(name[level:], package, level)
+[Python Integration Tests/python]   | src/a_star_client/test_weird_scenarios_for_navigator.py:6: in <module>
+[Python Integration Tests/python]   |     from warehouse_server.warehouse import Warehouse
+[Python Integration Tests/python]   | src/warehouse_server/warehouse.py:2: in <module>
+[Python Integration Tests/python]   |     import numpy as np
+[Python Integration Tests/python]   | E   ModuleNotFoundError: No module named 'numpy'
+[Python Integration Tests/python]   | ___________ ERROR collecting src/warehouse_server/test_warehouse.py ____________
+[Python Integration Tests/python]   | ImportError while importing test module '/home/ripytide/sync/uni/spe/2022-RoboSim/src/warehouse_server/test_warehouse.py'.
+[Python Integration Tests/python]   | Hint: make sure your test modules/packages have valid Python names.
+[Python Integration Tests/python]   | Traceback:
+[Python Integration Tests/python]   | /opt/hostedtoolcache/Python/3.7.16/x64/lib/python3.7/importlib/__init__.py:127: in import_module
+[Python Integration Tests/python]   |     return _bootstrap._gcd_import(name[level:], package, level)
+[Python Integration Tests/python]   | src/warehouse_server/test_warehouse.py:5: in <module>
+[Python Integration Tests/python]   |     from .warehouse import seed
+[Python Integration Tests/python]   | src/warehouse_server/warehouse.py:2: in <module>
+[Python Integration Tests/python]   |     import numpy as np
+[Python Integration Tests/python]   | E   ModuleNotFoundError: No module named 'numpy'
+[Python Integration Tests/python]   | =========================== short test summary info ============================
+[Python Integration Tests/python]   | ERROR src/a_star_client/test_the_navigator.py
+[Python Integration Tests/python]   | ERROR src/a_star_client/test_weird_scenarios_for_navigator.py
+[Python Integration Tests/python]   | ERROR src/warehouse_server/test_warehouse.py
+[Python Integration Tests/python]   | !!!!!!!!!!!!!!!!!!! Interrupted: 3 errors during collection !!!!!!!!!!!!!!!!!!!!
+[Python Integration Tests/python]   | ============================== 3 errors in 0.45s ===============================
+[Python Integration Tests/python]   ❌  Failure - Main pytest
+[Python Integration Tests/python] exitcode '2': failure
+[Python Integration Tests/python] 🏁  Job failed

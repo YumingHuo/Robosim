@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+  <link href="output.css" rel="stylesheet" />
+  <link href="base.css" rel="stylesheet" />
+  <title>Robosim</title>
+  <script type="module" src="interface.js"></script>
+</head>
+
+<body id="body" class="body h-full">
+
+  <div class="container">
+
+    <div class="left">
+      <div id="img"  class="flex items-center image img">
+        <canvas id="image" width="800" height="600" class="w-full h-full image-border"></canvas>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="right-top">
+        <p class="text-center version">Version: 0.0.5 |</p>
+        <p class=" text-center version">| Current Status : </p>
+        <div id="status" class="red"></div>
+      </div>
+
+      <div class="log" id="log">
+        <div id="logWindow" class="logWindow">
+          <p id="logger" class="logger"></p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+
+    <div class="grid gap-5 grid-rows-3 grid-cols-9 h-full grid-main">
+
+      <label for="selectedBox" class="label-main col-start-1 col-span-1 row-start-1">Box ID:</label>
+      <select id="selectedBox" type="number" class="input-main input-focus col-start-2 col-span-1 row-start-1"></select>
+
+      <button id="add_box" class="btn-main col-start-1 col-span-2 row-start-2">
+        Add Box
+      </button>
+
+      <button id="remove_box" class="btn-main col-start-1 col-span-2 row-start-3">
+        Remove Box
+      </button>
+
+      <button id="north" class="btn-main col-start-3 row-start-1">
+        North
+      </button>
+      <button id="south" class="btn-main col-start-4 row-start-1">
+        South
+      </button>
+      <button id="east" class="btn-main col-start-4 row-start-2">East</button>
+      <button id="west" class="btn-main col-start-3 row-start-2">West</button>
+      <button id="up" class="btn-main col-start-3 row-start-3">Up</button>
+      <button id="down" class="btn-main col-start-4 row-start-3">Down</button>
+      <label class="label-main col-start-5 col-span-2 row-start-1">Camera perspectives</label>
+      <button id="camera_preset_front" class="btn-main col-start-5 col-span-2 row-start-3">
+        Front
+      </button>
+      <button id="camera_preset_back" class="btn-main col-start-6 row-start-2">
+        Back
+      </button>
+      <button id="camera_preset_top" class="btn-main col-start-5 row-start-2">
+        Top
+      </button>
+      <div class="sun" id="sun"><img src="./img/sun.png" height="20px" width="20px"> </div>
+      <div class="moon" id="moon"><img src="./img/moon.png" height="20px" width="20px"> </div>
+      <button id="upload_CSV" class="btn-main col-start-7 row-start-1">
+        Upload CSV
+      </button>
+      <button id="download_CSV" class="btn-main col-start-8 row-start-1">
+        Download CSV
+      </button>
+      <button id="clear_all_boxes" class="btn-main col-start-7 row-start-2">
+        Clear all boxes
+      </button>
+      <button onclick="location.href='leaderboard.html'" id="leaderboard" class="btn-main col-start-8 row-start-2">
+        Leaderboard
+      </button>
+      <button id="access" class="btn-main col-start-7 row-start-3">
+        Acquire access
+      </button>
+      <button id="release" class="btn-main col-start-8 row-start-3">
+        Release access
+      </button>
+    </div>
+
+  </div>
+
+</body>

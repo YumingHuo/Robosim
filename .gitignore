@@ -1,0 +1,9 @@
+**/__pycache__
+**/node_modules
+**/.parcel-cache
+**/dist
+**/.DS_Store
+**/*.blend?
+src/web_client/static/images/*
+!src/web_client/static/images/.gitkeep
+src/rust_client/target

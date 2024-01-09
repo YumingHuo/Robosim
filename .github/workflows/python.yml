@@ -1,0 +1,25 @@
+name: Python Integration Tests
+
+on: [pull_request]
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.7"
+
+      - run: pip install -r requirements.txt
+
+      - run: pip install black flake8 pytest
+      
+      - name: pytest
+        run: pytest
+      
+      - name: black
+        run: black --check .
+
+      - name: flake8
+        run: flake8

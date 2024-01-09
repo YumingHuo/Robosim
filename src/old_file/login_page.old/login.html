@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robosim login page</title>
+    <link rel="stylesheet" href=link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
+        <script>
+          const users = {
+            'hym': '1a0ca03d268d81edf4cbeb1c0c7eca7bdda6ec650628e1cca0872d7aa86cd250',
+            'fz': '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92',
+            'robosim': 'a8578f48053740ccf9db59d1c4a305c084024682e57102b8a0f8313176e90783'
+          };
+          
+          function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const hashedPassword = sha256(password);
+            
+            if (users[username] && users[username] === hashedPassword) {
+              window.location.href = 'robosim.html';
+            } else {
+              alert('Invalid username or password.');
+            }
+          }
+        </script>
+</head>
+
+<body>
+    <div class="login-div">
+        <div class="logo">
+            <img src="OIP.jpg" alt="">
+        </div>
+        <div class="title">R o b o s i m</div>
+        <div class="sub-title">Version 0.0.5</div>
+        <div class="fields">
+            <div class="username">
+                <i class="fas fa-user"></i>
+                <input type="username" id="username" name="username" class="user-input" placeholder="username" />
+            </div>
+            <div class="password">
+                <i class="fas fa-lock"></i>
+
+                <input type="password" id="password" name="password" class="pass-input" placeholder="password" />
+            </div>
+            <button type="button" class="signin-button" onclick="login()" >login</button>
+            <div class="link">
+                <a href="#">Forgot password? </a> or <a href="#"> Sign Up</a>
+
+            </div>
+        </div>
+    </div>
+
+  
+</body>
+
+</html>

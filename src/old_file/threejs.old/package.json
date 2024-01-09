@@ -1,0 +1,17 @@
+{
+  "name": "RoboSim",
+  "version": "0.0.1",
+  "main": "three.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "dependencies": {
+    "parcel": "^2.7.0",
+    "socket.io-client": "^4.5.3",
+    "three": "^0.145.0"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3"
+  }
+}

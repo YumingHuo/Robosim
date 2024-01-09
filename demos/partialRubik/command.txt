@@ -1,0 +1,1 @@
+python a_star.py --server "http://localhost:4000/" 14 6 6 0
